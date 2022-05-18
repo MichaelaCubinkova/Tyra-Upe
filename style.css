@@ -1,1 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+:root {
+    --background-color: #f2f1f0;
+    --text-color: #00273d;
+    --pink-color: #925250;
+    --blue-color: #a3bcd0;
+}
 
+/*---------------------------------------------------------------BODY*/
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: 'proxima-nova';
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 90vh;
+}
+
+h4 {
+    font-family: 'proxima-nova';
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: var(--text-color);
+}
+/*----------------------------------------------------------BOXES*/
+.holdingbox {
+    width: 100%;
+    box-sizing:border-box;
+    padding-top: 80px;
+    display:flex;
+    flex-direction: row;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--background-color);
+    padding-top: 0;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+}
+  
+.right {
+    flex: 1;
+    background-color: var(--background-color);
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    margin: 5px;
+    text-align: left;
+}
+
+.right h1 {
+    font-family: 'proxima-nova';
+    font-weight: bold;
+    color: var(--blue-color);
+}
+
+.right p {
+    font-family: 'proxima-nova';
+    font-size: 18px;
+}
+
+.right a {
+    font-family: 'proxima-nova';
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--blue-color);
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+
+.right a:hover {
+    color: var(--text-color);
+}
+
+
+  
+/*---------------------------------------------------------BOXES END*/
