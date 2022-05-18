@@ -176,6 +176,19 @@ h1 {
 
 /* ---------------- NAVIGATION END ---------------- */
 
+/*-----------------------------------------------------------------FOOTER*/
+
+footer{
+    background: var(--text-color);
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+footer p{
+    color: var(--background-color);
+    font-size: 14px;
+}
+
 /*-----------------------------------------------------------------MEDIA*/
   
 @media screen and (min-width: 768px) {
