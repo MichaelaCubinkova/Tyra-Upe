@@ -91,6 +91,8 @@ h1 {
 .long p {
     font-size: 22px;
     color: var(--text-color);
+    padding-left: 110px;
+    padding-right: 110px;
 }
 
 .left {
@@ -171,7 +173,7 @@ h1 {
 
 .catalog{
     padding-top: 50px;
-    font-weight: 250;
+    font-weight: 300;
     color: var(--text-color);
     text-transform: uppercase;
 }
