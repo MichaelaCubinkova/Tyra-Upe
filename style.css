@@ -144,6 +144,9 @@ h1 {
 /* ---------------- NAVIGATION ---------------- */
 
 .navig {
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
