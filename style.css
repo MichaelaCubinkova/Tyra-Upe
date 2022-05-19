@@ -85,8 +85,6 @@ h1 {
 .long {
     flex: 1;
     background-color: var(--background-color);
-    padding-right: 80px;
-    padding-left: 80px;
     margin: 5px;
     align-content: center;
     text-align: center;
@@ -105,8 +103,6 @@ h1 {
 .left {
     flex: 1;
     background-color: var(--background-color);
-    padding-right: 50px;
-    padding-left: 50px;
     margin: 5px;
     align-content: center;
     text-align: center;
@@ -125,8 +121,6 @@ h1 {
 .right {
     flex: 1;
     background-color: var(--background-color);
-    padding-right: 50px;
-    padding-left: 50px;
     font-size: 18px;
     margin: 5px;
     text-align: center;
@@ -202,7 +196,20 @@ footer p{
   
 @media screen and (min-width: 768px) {
 
+    .long {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    
+    .right {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
 
+    .left {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
 
     .navig {
         padding-top: 10px;
@@ -243,5 +250,20 @@ footer p{
     .holdingbox3 {
         flex-direction: column-reverse;
         width: 100%;
+    }
+
+    .long {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .right {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .left {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
