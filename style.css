@@ -34,42 +34,51 @@ h1 {
 
 .holdingbox1 {
     width: 100%;
+    height: auto;
     box-sizing:border-box;
     padding-top: 80px;
     display:flex;
     flex-direction: row;
     align-content:center;
     text-align: center;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
 
 .holdingbox2 {
     width: 100%;
+    height: auto;
     box-sizing:border-box;
     padding-top: 80px;
     display:flex;
     flex-direction: row;
     align-content:center;
     text-align: center;
+    justify-content: space-around;
 }
 
 .holdingbox3 {
     width: 100%;
+    height: auto;
     box-sizing:border-box;
     padding-top: 80px;
     display:flex;
     flex-direction: row;
     align-content:center;
     text-align: center;
+    justify-content: space-around;
 }
 
 .holdingbox4 {
     width: 100%;
+    height: auto;
     box-sizing:border-box;
     padding-top: 80px;
     display:flex;
     flex-direction: row;
     align-content:center;
     text-align: center;
+    justify-content: space-around;
 }
 
 .long {
@@ -196,10 +205,8 @@ footer p{
 /*-----------------------------------------------------------------MEDIA*/
   
 @media screen and (min-width: 768px) {
-    
-    .holdingbox {
-      flex-direction: column;
-    }
+
+
 
     .navig {
         padding-top: 10px;
@@ -207,26 +214,38 @@ footer p{
         grid-template-areas: 'socials logo product';
     }
 
-    .socials{
+    .socials {
         display: block;
     }
 
-    .logo{
+    .logo {
         padding-left: 0;
     }
 
-    .catalog{
+    .catalog {
         padding-right: 70px;
     }
 
-    ul{
+    ul {
         overflow: hidden;
         padding-left: 70px;
         padding-top: 50px;
     }
 
-    li{
+    li {
         display:inline-block;
     }
 }
 
+@media screen and (max-width: 1200px) {
+    
+    .holdingbox1, .holdingbox2, .holdingbox4 {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .holdingbox3 {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
