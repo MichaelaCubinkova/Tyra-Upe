@@ -172,7 +172,38 @@ h1 {
     text-transform: uppercase;
 }
 
-/* ---------------- NAVIGATION END ---------------- */
+/* ---------------- NAVIGATION ---------------- */
+
+/* ---------------- CATALOGUE ---------------- */
+
+.productcatalogue{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'info productpics';
+    padding: 70px 30px ;
+}
+
+.info{
+    grid-area: info;
+    padding-top: 20px;
+}
+
+.productpics{
+    grid-area: productpics;
+    height: 600px;
+    overflow: scroll;
+    float: right;
+}
+
+.pics{
+    width: 45vw;
+    float: right;
+    padding: 20px 0;
+}
+
+/* ---------------- CATALOGUE ---------------- */
 
 /*-----------------------------------------------------------------FOOTER*/
 
