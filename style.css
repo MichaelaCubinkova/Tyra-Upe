@@ -24,117 +24,63 @@ body {
     font-weight: 300;
 }
 
-h1 {
-    font-size: 30px;
-    margin-bottom: 16px;
-}
-
-
 /*----------------------------------------------------------BOXES*/
 
-.holdingbox1 {
-    width: 100%;
-    height: auto;
-    box-sizing:border-box;
-    padding-top: 60px;
-    display:flex;
-    flex-direction: row;
-    align-content:center;
+.long{
+    font-size: 16px;
+    padding: 40px 40px;
     text-align: center;
-    justify-content: space-around;
-    flex-flow: wrap;
-}
-
-.holdingbox2 {
-    width: 100%;
-    height: auto;
-    box-sizing:border-box;
-    padding-top: 120px;
-    display:flex;
-    flex-direction: row;
-    align-content:center;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.holdingbox3 {
-    width: 100%;
-    height: auto;
-    box-sizing:border-box;
-    padding-top: 60px;
-    display:flex;
-    flex-direction: row;
-    align-content:center;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.holdingbox4 {
-    width: 100%;
-    height: auto;
-    box-sizing:border-box;
-    padding-top: 60px;
-    padding-bottom: 70px;
-    display:flex;
-    flex-direction: row;
-    align-content:center;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.long {
-    flex: 1;
-    background-color: var(--background-color);
-    margin: 5px 80px;
-    align-content: center;
-    text-align: center;
-}
-
-.long p {
-    font-size: 18px;
     color: var(--pink-color);
 }
 
-.left {
-    flex: 1;
-    background-color: var(--background-color);
-    margin: 5px;
-    align-content: center;
+.values{
     text-align: center;
-}
- 
-.left h1 {
-    font-weight: 700;
-    color: var(--blue-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'reusable'
+    'handmade'
+    'sustainable';
 }
 
-.left p {
-    font-size: 18px;
+.reusability{
+    grid-area: reusable;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.hand{
+    grid-area: handmade;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.sustainability{
+    grid-area: sustainable;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.iconss{
+    width: 150px;
+}
+
+.header-values{
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue-color);
+    padding: 10px 0;
+}
+
+p{
+    font-family: 'proxima-nova';
     color: var(--text-color);
 }
 
-.right {
-    flex: 1;
-    background-color: var(--background-color);
-    font-size: 18px;
-    margin: 5px;
-    text-align: center;
-    align-content: center;
+.desc1{
+    padding: 0px 70px;
 }
 
-.right h1 {
-    font-weight: 700;
-    color: var(--blue-color);
-}
-
-.right p {
-    font-size: 18px;
-    color: var(--text-color);
-}
-
-
-
-  
 /*---------------------------------------------------------BOXES END*/
 
 /* ---------------- NAVIGATION ---------------- */
@@ -252,6 +198,10 @@ footer p{
     font-size: 14px;
 }
 
+.symbol{
+    width: 40px;
+}
+
 /*-----------------------------------------------------------------MEDIA*/
   
 @media screen and (min-width: 808px) {
@@ -321,38 +271,47 @@ footer p{
     }
 
     .pics{
-        width: 50vw;
+        width: 45vw;
     }
 
     .productpics{
         padding-top: 0px;
     }
-}
 
-@media screen and (max-width: 1200px) {
+    .price{
+        padding-bottom: 35px;
+    }
+
+    /* - ---- VALUES ---- - */
+
+    .long{
+        margin: 40px 150px 20px;
+        font-size: 18px;
+    }
+
+    .values{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'reusable handmade sustainable';
+        padding: 0px 70px 100px 70px;
+    }
+
+    .desc1{
+        padding: 0px 40px;
+        font-size: 18px;
+    }
+
+    .header-values{
+        font-size: 24px;
+        padding: 10px 0px;
+    }
+
+    .iconss{
+        width: 140px;
+    }
+
+    .symbol{
+        width: 50px;
+    }
     
-    .holdingbox1, .holdingbox2, .holdingbox4 {
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .holdingbox3 {
-        flex-direction: column-reverse;
-        width: 100%;
-    }
-
-    .long {
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
-    .right {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .left {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
 }
