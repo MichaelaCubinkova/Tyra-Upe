@@ -210,6 +210,7 @@ footer p{
     .long {
         padding-left: 110px;
         padding-right: 110px;
+        padding-bottom: 80px;
     }
     
     .right {
@@ -290,7 +291,7 @@ footer p{
     /* - ---- VALUES ---- - */
 
     .long{
-        margin: 40px 150px 20px;
+        margin: 40px 150px 10px;
         font-size: 18px;
     }
 
@@ -302,7 +303,7 @@ footer p{
     }
 
     .desc1{
-        padding: 0px 40px;
+        padding: 0px 50px;
         font-size: 18px;
     }
 
